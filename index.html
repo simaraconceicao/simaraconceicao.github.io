@@ -1,56 +1,101 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <!-- adicionar a meta tag responsiva do bootstrap aqui! -->
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - Nome da Aluna</title>
+    <title>Portfólio - Simara Conceição</title>
     <!-- adicionar css do bootstrap aqui! -->
+    <link rel="stylesheet" href="./styles/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./styles/style.css">
-    <!-- fontAewsome kit para os ícones do projeto -->
-    <script src="https://kit.fontawesome.com/adb42fac4a.js" crossorigin="anonymous"></script>
+
 </head>
+
 <body>
     <!-- nav -->
-    <nav>
-        <!-- <img src="" alt=""> -->
-        <p>{re<span>programa</span>}</p>
+    <nav class="navbar navbar-expand-lg navbar-light bg-roxo">
+        <div class="container">
+            <a class="navbar-brand text-white" href="#">{re<span class="font-weight-light">programa</span>}</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Portfólio</a>
+                    </li>
+                </ul>
+            </div>
+    </nav>
+    <!-- <nav>
+        <img src="" alt="">
+        <!- <p>{re<span>programa</span>}</p>
         <ul>
             <li>Habilidades</li>
             <li>Sobre</li>
             <li>Projetos</li>
-        </ul>
-    </nav>
+        </ul> -->
+    <!-- </nav> -->
 
     <!-- header -->
     <header>
         <!-- carousel -->
-        <section>
-            <img src="./assets/images/sample-photo-01.jpg" alt="">
-            <img src="./assets/images/sample-photo-02.jpg" alt="">
-            <img src="./assets/images/sample-photo-03.jpg" alt="">
-        </section>
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-intervale="3000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100 imagem-carrosel" src="./assets/images/sample-photo-01.jpg"
+                        alt="Primeiro Slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100 imagem-carrosel" src="./assets/images/sample-photo-02.jpg"
+                        alt="Segundo Slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100 imagem-carrosel" src="./assets/images/modal-03.png" alt="Terceiro Slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </div>
 
         <!-- contato -->
-        <section>
-            <h1>Nome</h1>
-            <h2>Desenvolvedora front-end</h2>
-            <a href="" target="_blank">
-                <i class="fab fa-github-alt"></i>
-                <span>github.com/nome</span>
-            </a>
-            <a href="" target="_blank">
-                <i class="fab fa-linkedin"></i>
-                <p>linkedin.com/nome</span>
-            </a>
-            <a href="" target="_blank">
-                <i class="fas fa-envelope"></i>
-                <span>nome@gmail.com</span>
-            </a>
+        <section class="py-3">
+            <div class="container text-center">
+                <h1>Simara Conceição</h1>
+                <h3 class="font-italic font-weight-light pb-2">Desenvolvedora front-end</h3>
+                <div class="d-flex flex-column flex-md-row justify-content-around redes-sociais">
+                    <a href="" target="_blank">
+                        <i class="fab fa-github-alt"></i>
+                        <span >github.com/nome</span>
+                    </a>
+                    <a href="" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                        <span>linkedin.com/nome</span>
+                    </a>
+                    <a href="" target="_blank">
+                        <i class="fas fa-envelope"></i>
+                        <span>nome@gmail.com</span>
+                    </a>
+                </div>
+            </div>
         </section>
-    </header> 
-    
+    </header>
+
     <!-- seções - habilidades e sobre -->
     <section>
         <h3>Habilidades</h3>
@@ -94,7 +139,9 @@
         <section>
             <h3>Sobre</h3>
             <p>Aluna do <span>bootcamp de front-end</span> da {reprograma}.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores reprehenderit facere ea aperiam modi magni asperiores? <span>Impedit qui saepe necessitatibus exercitationem </span> Impedit qui saepe necessitatibus exercitationem debitis perspiciatis ex. Porro ut iste.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores reprehenderit facere ea aperiam modi
+                magni asperiores? <span>Impedit qui saepe necessitatibus exercitationem </span> Impedit qui saepe
+                necessitatibus exercitationem debitis perspiciatis ex. Porro ut iste.</p>
             <p>Outras áreas de interesse: <span>metodologias ágeis, UX, Python, Clojure</span>.</p>
         </section>
     </section>
@@ -111,11 +158,16 @@
 
     <!-- footer -->
     <footer>
-    <small>Desenvolvido com Bootstrap por Nome enquanto aluna da<span><a href="http://reprograma.com.br/index.html"
-        target="_blank">{reprograma}</a></span> 2019</small>
+        <small>Desenvolvido com Bootstrap por Nome enquanto aluna da<span><a href="http://reprograma.com.br/index.html"
+                    target="_blank">{reprograma}</a></span> 2019</small>
     </footer>
-    
+
     <!-- adicionar jQuery aqui! -->
+    <script src="./js/jquery-3.4.1.min.js"></script>
     <!-- adicionar js do bootstrap aqui! -->
+    <script src="./js/bootstrap.min.js"></script>
+    <!-- fontAewsome kit para os ícones do projeto -->
+    <script src="https://kit.fontawesome.com/adb42fac4a.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
