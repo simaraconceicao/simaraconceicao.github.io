@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    margin: 0;
+    background-image: linear-gradient(to right, #e0c3fc, #8ec5fc);
+}
+
+#listaContainer{
+    min-height: 75vh;
+    margin-right: 8%;
+    margin-top: 20%;
+    margin-left: 8%;
+    background-color: white;
+  
+}
+
+h1{
+    min-width: 20vh;
+    min-height: 12vh;
+    font-size: 17px;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 1px rgba(0,0,0,0.24);
+}
+
+
+.tarefas{
+    min-width: 84vw;
+    min-height: 10vh;
+}
+
+.erroCampo {
+    font-size: 12px;
+    color: red;
+    margin: 2px;
+}
+
+
+.btnAdd{
+    background-color:#ba7af8 ;
+    min-width: 84vw;
+    min-height: 5vh;
+}
+
+.tarefinha{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 1px rgba(0,0,0,0.24);
+    padding-top: 5%;
+    padding-right: 4%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+
+}
+
+.tarefa-digitada{
+    font-weight: 700;
+}
+
+.tarefa-executada{
+    text-decoration-line: line-through; 
+}
+
+.btnMarcar{
+    background-color:#ba7af8 ;
+    min-width: 35vw;
+    min-height: 5vh;
+    margin-left: 7%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.btnExcluir{
+    background-color:#ba7af8 ;
+    min-width: 35vw;
+    min-height: 5vh;   
+}
+
+@media(min-width: 768px){
+
+    #listaContainer{
+        min-height:78vh;
+        max-width: 55vw;
+        margin-right: 8%;
+        margin-top: 10%;
+        margin-left: 22%;
+        background-color: white;
+    }
+
+    h1{
+        min-height: 12vh;
+        font-size: 25px;
+        padding-left: 13%;
+        padding-right: 10%;
+        display: flex;
+        align-items: center;
+        box-shadow: 0px 1px rgba(0,0,0,0.24)
+}
+
+    .tarefa {
+         min-width: 55vw;
+         min-height: 12vh;
+         margin-top: 2%;
+    }
+
+    .btnAdd {
+        background-color: #ba7af8;
+        min-width: 55vw;
+        min-height: 7vh;
+    }
+
+    .btnMarcar {
+        background-color: #ba7af8;
+        min-width: 22vw;
+        min-height: 6vh;
+        margin-left: 7%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    .btnExcluir {
+        background-color: #ba7af8;
+        min-width: 22vw;
+        min-height: 6vh;
+        margin-left: 7%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+}
+
+@media(min-width: 1440px){
+
+    #listaContainer {
+        min-height: 70vh;
+        max-width: 35vw;
+        margin-top: 8%;
+        margin-left: 28%;
+        background-color: white;
+        display: flex;
+        box-shadow: 0px 1px rgba(0,0,0,0.24);
+    }
+
+    h1 {
+        min-height: 12vh;
+        font-size: 20px;
+        padding-left: 20%;
+        padding-right: 10%;
+        text-align: center;
+      
+}
+
+    .tarefa {
+        min-width: 35vw;
+        min-height: 9vh;
+        margin-top: 2%;
+        font-size: 14px;
+}
+
+    .btnAdd {
+        background-color: #ba7af8;
+        min-width: 35vw;
+        min-height: 8vh;
+        font-size: 15px;
+    }
+
+    .btnMarcar {
+        background-color: #ba7af8;
+        min-width: 12vw;
+        min-height: 8vh;
+        margin-left: 7%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        font-size: 15px;
+    }
+    .btnExcluir {
+        background-color: #ba7af8;
+        min-width: 12vw;
+        min-height: 8vh;
+        margin-left: 7%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        font-size: 15px;
+    }
+}
+
+.tarefas-digitadas {
+    font-weight: 700;
+}
+
+.tarefas-excluidas { 
+    display: none;
+}
+
+.tarefas-marcadas {
+    text-decoration-line: line-through; 
+}
