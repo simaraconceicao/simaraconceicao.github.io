@@ -78,10 +78,10 @@
             <div class="container text-center">
                 <h1>Simara Conceição</h1>
                 <h3 class="font-italic font-weight-light pb-2">Desenvolvedora front-end</h3>
-                <div class="d-flex flex-column flex-md-row justify-content-around redes-sociais">
+                <div class="d-flex flex-column flex-lg-row justify-content-around redes-sociais">
                     <a href="" target="_blank">
                         <i class="fab fa-github-alt"></i>
-                        <span >github.com/nome</span>
+                        <span>github.com/nome</span>
                     </a>
                     <a href="" target="_blank">
                         <i class="fab fa-linkedin"></i>
@@ -97,63 +97,124 @@
     </header>
 
     <!-- seções - habilidades e sobre -->
-    <section>
-        <h3>Habilidades</h3>
-        <div>
-            <i class="fab fa-html5"></i>
-            <p>HTML</p>
-        </div>
-        <div>
-            <i class="fab fa-css3-alt"></i>
-            <p>CSS</p>
-        </div>
-        <div>
-            <i class="fab fa-js"></i>
-            <p>JavaScript</p>
-        </div>
-        <div>
-            <i class="fab fa-sass"></i>
-            <p>Sass</p>
-        </div>
-        <div>
-            <i class="fas fa-book"></i>
-            <p>jQuery</p>
-        </div>
-        <div>
-            <i class="fab fa-react"></i>
-            <p>React</p>
-        </div>
-        <div>
-            <i class="fab fa-bootstrap"></i>
-            <p>Bootstrap</p>
-        </div>
-        <div>
-            <i class="fab fa-git-alt"></i>
-            <p>Git</p>
-        </div>
-        <div>
-            <i class="fas fa-tasks"></i>
-            <p>Scrum</p>
-        </div>
+    <section class="d-flex align-items-center text-white sobre">
+        <div class="container d-flex flex-column flex-lg-row text-center align-items-center">
+            <div class="w-50 p-3">
+                <h3>Habilidades</h3>
+                <div class="row">
+                    <div class="col">
+                        <i class="fab fa-html5"></i>
+                        <p>HTML</p>
+                    </div>
+                    <div class="col">
+                        <i class="fab fa-css3-alt"></i>
+                        <p>CSS</p>
+                    </div>
+                    <div class="col">
+                        <i class="fab fa-js"></i>
+                        <p>JavaScript</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <i class="fab fa-sass"></i>
+                        <p>Sass</p>
+                    </div>
+                    <div class="col">
+                        <i class="fas fa-book"></i>
+                        <p>jQuery</p>
+                    </div>
+                    <div class="col">
+                        <i class="fab fa-react"></i>
+                        <p>React</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <i class="fab fa-bootstrap"></i>
+                        <p>Bootstrap</p>
+                    </div>
+                    <div class="col">
+                        <i class="fab fa-git-alt"></i>
+                        <p>Git</p>
+                    </div>
+                    <div class="col">
+                        <i class="fas fa-tasks"></i>
+                        <p>Scrum</p>
+                    </div>
+                </div>
+            </div>
 
-        <section>
-            <h3>Sobre</h3>
-            <p>Aluna do <span>bootcamp de front-end</span> da {reprograma}.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores reprehenderit facere ea aperiam modi
-                magni asperiores? <span>Impedit qui saepe necessitatibus exercitationem </span> Impedit qui saepe
-                necessitatibus exercitationem debitis perspiciatis ex. Porro ut iste.</p>
-            <p>Outras áreas de interesse: <span>metodologias ágeis, UX, Python, Clojure</span>.</p>
-        </section>
+            <section class="w-50 p-3">
+                <h3>Sobre</h3>
+                <p>Aluna do <span>bootcamp de front-end</span> da {reprograma}.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores reprehenderit facere ea aperiam
+                    modi
+                    magni asperiores? <span>Impedit qui saepe necessitatibus exercitationem </span> Impedit qui saepe
+                    necessitatibus exercitationem debitis perspiciatis ex. Porro ut iste.</p>
+                <p>Outras áreas de interesse: <span>metodologias ágeis, UX, Python, Clojure</span>.</p>
+            </section>
+        </div>
     </section>
 
     <!-- cards - meus projetos -->
-    <section>
-        <h3>Portfólio</h3>
-        <!-- cards -->
-        <!-- modais -->
-        <img src="./assets/images/modal-01.jpg" alt="">
-        <img src="./assets/images/modal-02.jpg" alt="">
-        <img src="./assets/images/modal-03.jpg" alt="">
+    <section class="py-4">
+        <div class="container text-center">
+            <h3>Portfólio</h3>
+            <!-- cards -->
+            <!-- modais -->
+            <div class="row justify-content-center">
+                <div class="card tamanho-card mx-4">
+                    <img src="./assets/images/modal-01.png" class="card-img-top imagem-cards" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modal01">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="modal" tabindex="-1" role="dialog" id="modal01">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Modal title</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Modal body text goes here.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card tamanho-card mx-4">
+                    <img src="./assets/images/modal-02.png" class="card-img-top imagem-cards" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card tamanho-card mx-4">
+                    <img src="./assets/images/modal-03.png" class="card-img-top imagem-cards" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- footer -->

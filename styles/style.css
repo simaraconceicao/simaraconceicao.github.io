@@ -24,5 +24,23 @@ nav a:hover {
 .redes-sociais span:hover {
     font-weight: 500;
     color: #7e459b
+}
 
+.habilidades i {
+    font-size: 1.8rem;
+}
+
+.sobre {
+    background-color: #7e459b;
+}
+
+.tamanho-card {
+    width: 18rem;
+    
+}
+
+.imagem-cards {
+    object-fit: cover;
+    object-position: 0 40%;
+    height: 40vh;
 }
